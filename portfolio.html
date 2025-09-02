@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
+            <li><a href="#tabela" class="menu-link">Tabela de Preços</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="/img/1.png" alt="Caroliny logo" class="logo">
+            <h1>Caroliny</h1>
+            <p>Cartomante</p>
+        </div>
+    </main>
+    <section id="sobre" class="Sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <p class="sobre-texto">
+                Olá! me chamo Ana Caroliny e trabalho com a cartomancia profissionalmente a mais ou menos 9 meses,
+                estudo o tarot e o cigano mais de um ano e quatro meses. Trabalho com tarot e o baralho cigano, sou
+                "professora" de algumas outras cartomantes
+            </p>
+        </div>
+    </section>
+    <section id="tabela" class="Tabela">
+        <h2 class="tabela-titulo">Tabela de Preços</h2>
+        <div class="tabela-conteudo">
+            <div class="tabela-card">
+                <img src="img/3.png" alt="Tabela 1" class="tabela-img">
+                <div class="tabela-caixa-texto">
+                    <h3 class="info-tabela">Perguntas</h3>
+                    <p class="tabela-texto"><b>Tarot:</b>
+                    <ul class="tabela-texto">
+                        <li>17,00$ objetiva (2 perguntas: 30$)</li>
+                        <li>22$ detalhada (2 perguntas: 38,50$)</li>
+                        <li>105$ 1 completa (7 perguntas)</li>
+                        <li>2 completas (mas que pode fazer até 14 perguntas) é 200,00$!</li>
+                    </ul>
+                    <b class="tabela-texto">Baralho cigano:</b>
+                    <ul class="tabela-texto">
+                        <li>14$ objetiva (27$ duas perguntas)</li>
+                        <li>20$ detalhada (35$ duas perguntas)</li>
+                        <li>100$ completa (7 perguntas)</li>
+                        <li>(190,50$ pode fazer até 14 perguntas)</li>
+                    </ul>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="tabela-card">
+                <img src="img/4.png" alt="Tabela 2" class="tabela-img">
+                <div class="tabela-caixa-texto">
+                    <h3 class="info-tabela">Sessões</h3>
+                    <p class="tabela-texto">
+                    <ul class="tabela-texto">
+                        <li>20 minutos: 45$</li>
+                        <li>35 minutos: 65$</li>
+                        <li>1 hora: 120$</li>
+                        <li>1 hora e meia: 180$</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="tabela-card">
+                <img src="img/5.png" alt="Tabela 1" class="tabela-img">
+                <div class="tabela-caixa-texto">
+                    <h3 class="info-tabela">Jogos de tiragem</h3>
+                    <ul class="tabela-texto">
+                        <li><b>Jogo amoroso simples:</b>80,90$</li>
+                        <li><b>Jogo amoroso completo:</b> 113$</li>
+                        <li><b>Jogo financeiro simples:</b> 85$</li>
+                        <li><b>Jogo financeiro completo:</b>115$</li>
+                        <li><b>Jogo de vidas passadas simples:</b>90,00$</li>
+                        <li><b>Jogo de vidas passadas completo:</b>160$</li>
+                        <li><b>Roda da Vida:</b> 180$</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabela-card">
+                <img src="img/6.png" alt="Tabela 1" class="tabela-img">
+                <div class="tabela-caixa-texto">
+                    <h3 class="info-tabela">Carta Canalizada</h3>
+                    <ul class="tabela-texto">
+                        <li><b>Simples:</b>65,50$</li>
+                        <li><b>Detalhada:</b> 80$</li>
+                        <li><b>Assunto específico:</b> 75,90$</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabela-card">
+                <img src="img/C.png" alt="Tabela 1" class="tabela-img">
+                <div class="tabela-caixa-texto">
+                    <h3 class="info-tabela">Métodos</h3>
+                    <ul class="tabela-texto">
+                        <li><b>Templo de Afrodite:</b>50$</li>
+                        <li><b>Templo do Diabo:</b> 55$</li>
+                        <li><b>Karma Passado:</b> 60$</li>
+                        <li><b>Estrela do Amor:</b>33$</li>
+                        <li><b>Método financeiro:</b>40$</li>
+                        <li><b>Rosa Infernal:</b>52,50</li>
+                        <li><b>Outros...</b></li>
+                    </ul>
+
+                </div>
+
+            </div>
+    </section>
+    <section id="contato" class="Contato">
+        <h2 class="contato-titulo">Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="Nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4" id="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form"> Enviar WhatsApp</button>
+        </form>
+        
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const Nome = document.getElementById('Nome').value;
+            const Mensagem = document.getElementById('Mensagem').value;
+            const telefone = '5513997686891'
+            const texto = `Olá! Me chamo ${Nome}, ${Mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+            const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
+
+            console.log()
+
+            window.open(url, '_blank')
+        }
+    </script>
+</body>
+
+</html>
